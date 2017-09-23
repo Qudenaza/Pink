@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Pink</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <nav class="user-nav">
+      <div class="page-logo">
+        <img src="#" alt="Логотип">
+      </div>
+      <ul class="user-nav__list burger">
+        <li class="user-nav__item"><a href="#">Главная</a></li>
+        <li class="user-nav__item"><a href="#">Фотографии</a></li>
+        <li class="user-nav__item"><a href="#">Конкурс</a></li>
+        <li class="user-nav__item"><a href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+    <b class="page-header__title">Конкурс на самое безбашеное путешествие с Пинк</b>
+  </header>
+  <main class="main-content">
+    <section class="page-form">
+      <h2 class="visually-hidden">Форма</h2>
+      <p class="page-form__promo">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <form action="#" class="form">
+        <div class="form__name">
+          <label for="surname"></label>
+          <input type="text" name="surname" id="surname">
+          <label for="name"></label>
+          <input type="text" name="name" id="name">
+          <label for="fname"></label>
+          <input type="text" name="fname" id="fname">
+        </div>
+        <div class="form__achievments">
+          <b class="form__title">Ваши безбашенные достижения в путешествии</b>
+          <label>
+            <input type="radio" name="achievments" value="selfie-shark">
+            <span class="form__control-indicator"></span>
+            Сделал селфи с акулой
+          </label>
+          <label>
+            <input type="radio" name="achievments" value="beach">
+            <span class="form__control-indicator"></span>
+            Обгорел на пляже
+          </label>
+          <label>
+            <input type="radio" name="achievments" value="ChuckNorris">
+            <span class="form__control-indicator"></span>
+            Видел Чака Норриса
+          </label>
+          <label>
+            <input type="radio" name="achievments" value="souvenirs">
+            <span class="form__control-indicator"></span>
+            Накупил сувениров
+          </label>
+          <label>
+            <input type="radio" name="achievments" value="holdtower">
+            <span class="form__control-indicator"></span>
+            Удержал башню
+          </label>
+          <label>
+            <input type="radio" name="achievments" value="hotel">
+            <span class="form__control-indicator"></span>
+            Разгромил отель
+          </label>
+        </div>  
+        <div class="form__contacts">
+          <label for="number">Номерок телефончика</label>
+          <input type="text" name="number" id="number">
+          <label for="email"></label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="form__app">
+          <b class="form__title">С каким приложением путешествовали?</b>
+          <label>
+            <input type="checkbox" name="app" value="ios">
+            <span class="form__control-indicator"></span>
+            Pink для IOS
+          </label>
+          <label>
+            <input type="checkbox" name="app" value="android">
+            <span class="form__control-indicator"></span>
+            Pink на Android
+          </label>
+          <label>
+            <input type="checkbox" name="app" value="windows">
+            <span class="form__control-indicator"></span>
+            Windows Phone
+          </label>
+        </div>
+        <div class="form__emotions">
+          <b class="form__title">Опишите свои эмоции</b>
+          <textarea name="emotions"></textarea>
+        </div>
+        <button type="submit" class="button form__button">Отправить форму</button>
+        <span class="form__addition"><b>*</b>-Обязательные поля</span>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="page-logo">
+      <img src="#" alt="Логотип">
+    </div>
+    <div class="main-footer__socials socials">
+      <a href="#" class="socials__vk vkontakte">Мы Вконтакте</a>
+      <a href="#" class="socials__fb facebook">Мы в Facebook</a>
+      <a href="#" class="socials__yt youtube">Мы в YouTube</a>
+    </div>
+    <div class="main-footer__authors">
+      <b class="main-footer__author">Разработано</b>
+      <a href="htmlacademy.ru" class="academy-logo">
+        <img src="#" alt="Лого Академии">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
