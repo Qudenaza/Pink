@@ -1,0 +1,11 @@
+body {
+	
+	background: red;
+}
+
+.test {
+	outline: 1px solid green;
+	width: 75px;
+	    height: 22px;
+	  background: url("../img/1.svg") no-repeat;
+} 
