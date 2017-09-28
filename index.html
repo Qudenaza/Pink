@@ -3,38 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink</title>
-  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
     <nav class="user-nav">
-      <div class="page-logo">
-        <img src="#" alt="Логотип">
+      <div class="user-nav__wrapper">
+        <div class="page-logo"></div>
+        <button class="user-nav__burger"></button>
       </div>
-      <ul class="user-nav__list burger">
-        <li class="user-nav__item"><a href="#">Главная</a></li>
-        <li class="user-nav__item"><a href="#">Фотографии</a></li>
-        <li class="user-nav__item"><a href="#">Конкурс</a></li>
-        <li class="user-nav__item"><a href="#">HTML Academy</a></li>
-      </ul>
     </nav>
-    <div class="user-download">
-      <a href="#" class="button">Скачать приложение</a>
-      <div class="user-download__icon apple-icon">
-        <img src="#" alt="apple">
+    <section class="user-download">
+      <div class="user-download__wrapper">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <b class="user-download__slogan">Взгляните на жизнь иначе!</b>
+        <a href="#" class="user-download__btn">Скачать приложение</a>
+        <div class="user-download__icons">
+          <a href="#" class="user-download__icon user-download__icon--apple">
+            <span class="visually-hidden">Скачать на ios</span>
+          </a>
+          <a href="#" class="user-download__icon user-download__icon--android">
+            <span class="visually-hidden">Скачать на android</span>
+          </a>
+          <a href="#" class="user-download__icon user-download__icon--microsoft">
+            <span class="visually-hidden">Скачать на microsoft</span>
+          </a>
+        </div>
+        <p class="user-download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <div class="user-download__icon android-icon">
-        <img src="#" alt="android">
-      </div>
-      <div class="user-download__icon windows-icon">
-        <img src="#" alt="windows">
-      </div>
-      <p class="user-download__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
+    </section>
   </header>
   <main class="main-content">
+    <section class="adventures">
+      <h2 class="visually-hidden">Наши возможности</h2>
+      <div class="adventures__wrapper">
+        <b class="adventures__title">Устали от серости мегаполиса?</b>
+        <b class="adventures__title">Нам есть, что вам предложить!</b>
+      </div>
+      <div class="content-wrapper">
+        <div class="adventures__wrapper">
+          <section class="adventures__items">
+            <h2 class="visually-hidden">Список возможностей</h2>
+            <section class="adventures__item">
+              <h3 class="visually-hidden">Первое преимущество</h3>
+              <b class="adventures__item-title">Поднимает настроение</b>
+              <p class="adventures__item-descr">Приложение позволит вам победить осенюю хандру и депрессию<br> буквально в несколько кликов!</p>
+            </section>
+            <section class="adventures__item">
+              <h3 class="visually-hidden">Второе преимущество</h3>
+              <b class="adventures__item-title">Меняет мир вокруг</b>
+              <p class="adventures__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </section>
+            <section class="adventures__item">
+              <h3 class="visually-hidden">Третье преимущество</h3>
+              <b class="adventures__item-title">Заводит новых друзей</b>
+              <p class="adventures__item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями<br> и заводите новых</p>
+            </section>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="adventures">
+      <h2 class="visually-hidden">Наши возможности</h2>
+      <div class="adventures__wrapper">
+        <b class="adventures__title">Устали от серости мегаполиса?</b>
+        <b class="adventures__title">Нам есть, что вам предложить!</b>
+      </div>
+        <section class="adventures__items">
+          <h2 class="visually-hidden">Список возможностей</h2>
+          <section class="adventures__item">
+            <h3 class="visually-hidden">Первое преимущество</h3>
+            <b class="adventures__item-title">Поднимает настроение</b>
+            <p class="adventures__item-descr">Приложение позволит вам победить осенюю хандру и депрессию<br> буквально в несколько кликов!</p>
+          </section>
+          <section class="adventures__item">
+            <h3 class="visually-hidden">Второе преимущество</h3>
+            <b class="adventures__item-title">Меняет мир вокруг</b>
+            <p class="adventures__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </section>
+          <section class="adventures__item">
+            <h3 class="visually-hidden">Третье преимущество</h3>
+            <b class="adventures__item-title">Заводит новых друзей</b>
+            <p class="adventures__item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями<br> и заводите новых</p>
+          </section>
+        </section>
+      </div> -->
+    </section>
+  </main>
+  <!-- <main class="main-content">
     <section class="adventures">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <b class="adventures__title">Устали от серости мегаполиса?</b>
@@ -62,9 +120,9 @@
           <div class="slide">
             <b class="feedback__title">Николай петров</b>
             <blockquote class="feedback__descr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-          </div>
+          </div> -->
           <!-- Еще +3   -->
-        </div>  
+       <!--  </div>
       </div>
     </section>
     <section class="price">
@@ -82,7 +140,7 @@
             <ul class="price__list">
               <li class="price__item">Розовый фильтр</li>
               <li class="price__item">Смайлики</li>
-              <li class="price__item">Комментарии</li>  
+              <li class="price__item">Комментарии</li>
             </ul>
           </div>
           <div class="price__item slide">
@@ -93,7 +151,7 @@
             <ul class="price__list">
               <li class="price__item">Розовый фильтр</li>
               <li class="price__item">Смайлики</li>
-              <li class="price__item">Комментарии</li>  
+              <li class="price__item">Комментарии</li>
             </ul>
           </div>
           <div class="price__item slide">
@@ -104,7 +162,7 @@
             <ul class="price__list">
               <li class="price__item">Розовый фильтр</li>
               <li class="price__item">Смайлики</li>
-              <li class="price__item">Комментарии</li>  
+              <li class="price__item">Комментарии</li>
             </ul>
           </div>
         </div>
@@ -128,6 +186,6 @@
       </div>
     </section>
     <div class="map"></div>
-  </main>
+  </main> -->
 </body>
 </html>

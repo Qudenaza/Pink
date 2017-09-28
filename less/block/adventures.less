@@ -1,0 +1,108 @@
+.adventures__wrapper {
+  width: 320px;
+  padding: 40px 20px 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-wrapper {
+  position: relative;
+  background: url("../../img/bg-triangle-white.svg") no-repeat,
+              #f2f2f2;
+  background-position: 0 top;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+.adventures__title {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #283645;
+}
+
+.adventures__items {
+  width: 100&;
+  position: relative;
+  margin-top: -7px;
+  padding-top: 50px;
+  padding-bottom: 285px;
+   &::after {
+    position: absolute;
+    content: "";
+    bottom: -38px;
+    left: 82px;
+    width: 157px;
+    height: 320px;
+    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
+  }
+}
+
+.adventures__item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  &:last-child {
+    padding-bottom: 16px;
+  }
+}
+
+.adventures__item-title {
+  line-height: 24px;
+}
+
+.adventures__item-descr {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+}
+
+
+@media @tablet-width {
+  .adventures__wrapper {
+    width: 620px;
+    padding: 53px 40px 0 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .content-wrapper {
+    margin-top: 45px;
+  }
+
+  .adventures__title {
+    font-size: 40px;
+    margin-bottom: 0;
+    &:last-child {
+      width: 500px;
+      margin-left: 60px;
+    }
+  }
+
+  .adventures__items {
+    margin-top: -22px;
+    margin-left: 280px;
+    padding-bottom: 0;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -280px;
+      width: 268px;
+      height: 481px;
+      background: url("../../img/iphone-screen-tablet-2@1x.png") no-repeat;
+    }
+  }
+
+  .adventures__item {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .adventures__item-title {
+    font-weight: 700;
+  }
+}

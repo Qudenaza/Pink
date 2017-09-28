@@ -1,0 +1,117 @@
+.user-download {
+  margin-top: 391px;
+  background: #1d2631;
+}
+
+.user-download__wrapper {
+  width: 280px;
+  padding: 46px 20px 10px 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.user-download__slogan {
+  display: none;
+}
+
+.user-download__btn {
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  padding: 12px 35px;
+}
+
+.user-download__icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.user-download__icon {
+  margin-top: 20px;
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background: url("../../img/logo-apple.svg") no-repeat;
+  }
+  &--android {
+    background: url("../../img/logo-android.svg") no-repeat;
+    width: 43px;
+    height: 47px;
+    margin-top: 28px;
+  }
+  &--microsoft {
+    background: url("../../img/logo-microsoft.svg") no-repeat;
+    width: 44px;
+    height: 41px;
+    margin-top: 32px;
+  }
+}
+
+.user-download__descr {
+  margin: 22px 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+/* Выше для Mobile */
+
+
+@media @tablet-width {
+  .user-download {
+    margin-top: 0px;
+    padding-bottom: 75px;
+    background: transparent;
+  }
+
+  .user-download__wrapper {
+    position: relative;
+    z-index: 5;
+    width: 620px;
+    padding: 95px 40px 10px 40px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .user-download__slogan {
+    text-align: center;
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 49px;
+    font-size: 40px;
+    line-height: 47px;
+    color: #ffffff;
+    font-weight: 300;
+    width: 200px;
+  }
+
+  .user-download__btn {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .user-download__icons {
+    padding: 0;
+    justify-content: flex-start;
+    margin: 45px 0 0 45px;
+  }
+
+  .user-download__icon {
+    margin-right: 37px;
+  }
+
+  .user-download__descr {
+    width: 300px;
+    margin-top: 36px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
