@@ -1,11 +1,27 @@
 .contacts {
-  .red();
   &__wrapper {
     width: 280px;
-    height: 415px;
-    padding: 0 20px 0 20px;
+    padding: 42px 20px 0 20px;
     margin: 0 auto;
-    .blue();
+    color: #283645;
+    text-align: center;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  &__header {
+    display: block;
+    margin-top: 33px;
+  }
+  &__link {
+    display: block;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #d22856;
   }
 }
 
@@ -14,8 +30,29 @@
   .contacts {
     &__wrapper {
       width: 620px;
-      height: 400px;
-      padding: 0 40px 0 40px;
+      padding: 48px 40px 30px 40px;
+    }
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 13px;
+    }
+    &__title {
+      display: block;
+      line-height: 47px;
+      font-size: 40px;
+    }
+    &__visit-us {
+      margin: auto;
+      margin-top: 14px;
+    }
+    &__call-us {
+      margin-left: 46px;
+      margin-right: 100px;
+    }
+    &__header {
+      display: block;
+      margin-bottom: 7px;
     }
   }
 }
@@ -25,8 +62,30 @@
   .contacts {
     &__wrapper {
       width: 940px;
-      height: 370px;
-      padding: 0 130px 0 130px;
+      padding: 65px 130px 20px 130px;
+    }
+    &__container {
+      display: flex;
+      padding-top: 25px;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    &__call-us {
+      margin-left: 50px;
+      margin-right: 0;
+    }
+    &__visit-us {
+      order: 0;
+      width: 250px;
+      margin: 0 75px 0 92px;
+    }
+    &__write-us {
+      order: 1;
+    }
+    &__header {
+      margin-bottom: 27px;
     }
   }
 }

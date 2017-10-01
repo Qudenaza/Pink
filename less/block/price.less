@@ -3,10 +3,104 @@
               #f1f1f1;
   background-size: 100% auto;
   &__wrapper {
+    position: relative;
     width: 280px;
-    height: 450px;
-    padding: 0 20px 0 20px;
     margin: 0 auto;
+    padding: 100px 20px 95px 20px;
+    overflow: hidden;
+  }
+}
+
+.price__table {
+  margin-left: -276px;
+  margin-right: -276px;
+}
+
+.price__controlers {
+  bottom: 45px;
+}
+
+.price__header {
+  position: relative;
+  width: 276px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  border: 2px solid #f1f1f1;
+  background: #283645;
+  &--hidden {
+    display: none;
+  }
+}
+
+.price__hidden {
+  display: none;
+}
+
+.price__header--hit::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: -2px;
+  width: 74px;
+  height: 73px;
+  background: url("../img/hit.png") no-repeat;
+}
+
+.price__name {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.price__price {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.price__smile,
+.price__comments,
+.price__filter {
+  display: block;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.price__table {
+  border-collapse: collapse;
+}
+.price__table td {
+  border: 2px solid #f1f1f1;
+}
+
+.price__base td {
+  background: url("../img/icon-yes.svg") no-repeat 94% 50%,
+              #ffffff;
+}
+
+.price__standart td {
+  background: url("../img/icon-yes.svg") no-repeat 94% 50%,
+              #ffffff;
+    &:nth-child(2) {
+      background: url("../img/icon-no.svg") no-repeat 94% 50%,
+                  #ffffff;
+  }
+}
+
+.price__unlim td{
+  background: url("../img/icon-no.svg") no-repeat 94% 50%,
+              #ffffff;
+  &:last-child {
+    background: url("../img/icon-yes.svg") no-repeat 94% 50%,
+              #ffffff;
   }
 }
 
@@ -14,8 +108,79 @@
   .price {
     &__wrapper {
       width: 620px;
-      height: 320px;
-      padding: 0 40px 0 40px;
+      padding: 93px 40px 68px 40px;
+    }
+  }
+
+  .price__controlers {
+    display: none;
+  }
+
+  .price__base .price__hidden,
+  .price__unlim .price__hidden {
+    background-image: none;
+  }
+  .price .price__hidden {
+    display: block;
+    padding: 14px 20px;
+    font-size: 14px;
+    background-image: none;
+    border: 1px solid #f1f1f1;
+    color: #283645;
+  }
+
+  .price__table {
+    margin: 0 auto;
+  }
+
+  .price__header {
+    position: relative;
+    width: 155px;
+    padding-top: 10px;
+    padding-bottom: 17px;
+    background: #283645;
+    &--hidden {
+      display: block;
+      background: transparent;
+    }
+  }
+
+  .price__name {
+    font-size: 16px;
+  }
+
+  .price__price {
+    font-size: 18px;
+  }
+
+  .price__comments--hidden,
+  .price__smile--hidden,
+  .price__filter--hidden {
+    padding: 0;
+    visibility: hidden;
+  }
+
+  .price__standart td {
+    background-position: 50% 50%;
+    &:first-child {
+      background-image: none;
+    }
+    &:nth-child(2) {
+      background-position: 50% 50%;
+    }
+  }
+
+  .price__base td {
+    background-position: 50% 50%;
+    &:last-child {
+      background-position: 50% 50%;
+    }
+  }
+
+  .price__unlim td {
+    background-position: 50% 50%;
+    &:last-child {
+      background-position: 50% 50%;
     }
   }
 }
@@ -24,9 +189,43 @@
   .price {
     &__wrapper {
       width: 940px;
-      height: 525px;
-      padding: 0 130px 0 130px;
+      padding: 185px 130px 90px 130px;
     }
+  }
+
+  .price__header {
+    width: 230px;
+    padding-top: 17px;
+    padding-bottom: 22px;
+  }
+
+  .price__smile,
+  .price__comments,
+  .price__filter {
+    display: block;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #283645;
+}
+
+  .price .price__hidden {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    background-image: none;
+    border: 1px solid #f1f1f1;
+    color: #283645;
+  }
+
+  .price__name {
+    font-size: 18px;
+  }
+
+  .price__price{
+    font-size: 24px;
   }
 }
 

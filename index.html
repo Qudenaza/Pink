@@ -15,8 +15,8 @@
         <div class="page-logo"></div>
         <ul class="user-nav__list">
           <li class="user-nav__item"><a href="#">Главная</a></li>
-          <li class="user-nav__item"><a href="#">Фотографии</a></li>
-          <li class="user-nav__item"><a href="#">Конкурс</a></li>
+          <li class="user-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="user-nav__item"><a href="form.html">Конкурс</a></li>
           <li class="user-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
         <button class="user-nav__burger"></button>
@@ -89,9 +89,10 @@
           <button class="toogle__btn" id="btn1">
         </div>
         <div class="feedback__item slide">
-          <b class="feedback__name">Николай Петров</b>
+          <cite class="feedback__name">Николай Петров</cite>
           <small class="feedback__info">25 лет, водитель трамвая</small>
-          <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <blockquote class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </blockquote>
         </div>
         <button class="feedback__arrow feedback__arrow--left"></button>
         <button class="feedback__arrow feedback__arrow--right"></button>
@@ -100,17 +101,91 @@
     <section class="price">
       <h2 class="visually-hidden">Прайс-лист</h2>
       <div class="price__wrapper">
+        <table class="price__table">
+          <tr>
+            <th class="price__header price__header--hidden"></th>
+            <th class="price__header">
+              <b class="price__name">База</b>
+              <span class="price__price">1,99 usd</span>
+            </th>
+            <th class="price__header price__header--hit">
+              <b class="price__name">Стандарт</b>
+              <span class="price__price">3,99 usd</span>
+            </th>
+            <th class="price__header">
+              <b class="price__name">Анлим</b>
+              <span class="price__price">9,99 usd</span>
+            </th>
+          </tr>
+          <tr class="price__base">
+            <td class="price__hidden">Розовый фильтр</td>
+            <td>
+              <span class="price__filter price__filter--hidden">Розовый фильтр</span>
+            </td>
+            <td>
+              <span class="price__filter price__filter--hidden">Розовый фильтр</span>
+            </td>
+            <td>
+              <span class="price__filter price__filter--hidden">Розовый фильтр</span>
+            </td>
+          </tr>
+          <tr class="price__standart">
+            <td class="price__hidden">Смайлики</td>
+            <td>
+              <span class="price__smile price__smile--hidden">Смайлики</span>
+            </td>
+            <td>
+              <span class="price__smile price__smile--hidden">Смайлики</span>
+            </td>
+            <td>
+              <span class="price__smile price__smile--hidden">Смайлики</span>
+            </td>
+          </tr>
+          <tr class="price__unlim">
+            <td class="price__hidden">Комментарии</td>
+            <td>
+              <span class="price__comments price__comments--hidden">Комментарии</span>
+            </td>
+            <td>
+              <span class="price__comments price__comments--hidden">Комментарии</span>
+            </td>
+            <td>
+              <span class="price__comments price__comments--hidden">Комментарии</span>
+            </td>
+          </tr>
+        </table>
+        <div class="price__controlers toogle">
+          <button class="toogle__btn" id="btn4" checked>
+          <button class="toogle__btn" id="btn5">
+          <button class="toogle__btn" id="btn6">
+        </div>
       </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__wrapper"></div>
+      <div class="contacts__wrapper">
+        <strong class="contacts__title">Остались вопросы?</strong>
+        <strong class="contacts__title">Свяжитесь с нами!</strong>
+        <div class="contacts__container">
+          <div class="contacts__call-us">
+            <b class="contacts__header">Звоните:</b>
+            <a class="contacts__link" href="tel:+7(812)5556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__write-us">
+            <b class="contacts__header">Пишите:</b>
+            <a class="contacts__link" href="#">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__visit-us">
+            <b class="contacts__header">Приезжайте в гости:</b>
+            <b class="contacts__link">ул. Большая<br> Конюшенная, 19/8</b>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Мы на карте</h2>
     </section>
-    <section class="main-footer">
-      <h2 class="visually-hidden">Подвал сайта</h2>
+    <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo page-logo"></div>
         <section class="main-footer__socials social">
@@ -134,7 +209,7 @@
           </a>
         </section>
       </div>
-    </section>
+    </footer>
 
     <!-- <section class="adventures">
       <h2 class="visually-hidden">Наши возможности</h2>
