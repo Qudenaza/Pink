@@ -37,9 +37,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 280px;
   margin: 0 auto;
   padding: 22px 20px;
@@ -60,10 +57,36 @@
   list-style: none;
 }
 .user-nav__item a {
+  position: relative;
   color: #ffffff;
   text-decoration: none;
 }
+.user-nav__item a:active {
+  opacity: 0.3;
+}
+.user-nav__item a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  bottom: -10px;
+  left: 0;
+}
+.user-nav__item--active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #d22856;
+  bottom: -10px;
+  left: 0;
+}
+.user-nav__item--active:hover {
+  color: #d22856;
+}
 .user-nav__burger {
+  margin-left: 155px;
   width: 50px;
   height: 24px;
   background: url("../img/icon-menu-burger.svg") no-repeat;
@@ -84,6 +107,7 @@
   }
   .user-nav__burger {
     margin-top: 16px;
+    margin-left: 423px;
   }
 }
 @media (min-width: 1200px) {
@@ -109,6 +133,7 @@
             justify-content: space-between;
     width: 620px;
     margin-top: 17px;
+    margin-left: 173px;
   }
   .user-nav__burger {
     display: none;
@@ -154,6 +179,13 @@
   border-radius: 30px;
   border: 3px solid #ffffff;
   padding: 12px 35px;
+}
+.user-download__btn:hover {
+  background: #ffffff;
+  color: #d22856;
+}
+.user-download__btn:active {
+  color: rgba(210, 40, 86, 0.3);
 }
 .user-download__icons {
   display: -webkit-box;
@@ -812,7 +844,7 @@
 }
 .contacts__wrapper {
   width: 280px;
-  padding: 42px 20px 0 20px;
+  padding: 42px 20px 24px 20px;
   margin: 0 auto;
   color: #283645;
   text-align: center;
@@ -834,10 +866,16 @@
   text-decoration: none;
   color: #d22856;
 }
+.contacts__link:hover {
+  color: #283645;
+}
+.contacts__link:active {
+  opacity: 0.3;
+}
 @media (min-width: 700px) {
   .contacts__wrapper {
     width: 620px;
-    padding: 48px 40px 30px 40px;
+    padding: 48px 40px 3px 40px;
   }
   .contacts__container {
     display: -webkit-box;
@@ -868,7 +906,7 @@
 @media (min-width: 1200px) {
   .contacts__wrapper {
     width: 940px;
-    padding: 65px 130px 20px 130px;
+    padding: 65px 130px 0 130px;
   }
   .contacts__container {
     display: -webkit-box;
@@ -901,36 +939,38 @@
   }
 }
 .map {
-  outline: 1px solid blue;
-  background: #ccccff;
+  position: relative;
   width: 100%;
-  height: 200px;
+  min-height: 200px;
+  margin: 0 auto;
+  background: url("../img/map-mobile.jpg") no-repeat;
+  background-size: 100% auto;
+}
+.map__svg {
+  display: block;
+  margin-top: -1px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 @media (min-width: 700px) {
   .map {
-    height: 380px;
-  }
-}
-@media (min-width: 1200px) {
-  .map {
-    height: 500px;
+    width: 100%;
+    min-height: 400px;
+    margin: 0 auto;
+    background: url("../img/map-tablet-desktop.jpg") no-repeat;
+    background-size: 100% auto;
   }
 }
 .main-footer {
   display: none;
-  outline: 1px solid red;
-  background: #ffcccc;
 }
 .main-footer__wrapper {
   display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 280px;
   padding: 0 20px 0 20px;
   margin: 0 auto;
-  outline: 1px solid green;
-  background: #4dff4d;
 }
 .main-footer__authors {
   display: -webkit-box;
@@ -961,7 +1001,13 @@
     margin-top: 4px;
   }
   .main-footer__authors {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
     margin-left: 58px;
+  }
+  .main-footer__logo {
+    background: url("../img/icon-pink-blue-tablet.svg") no-repeat;
   }
 }
 @media (min-width: 1200px) {
@@ -973,7 +1019,12 @@
     margin-left: 234px;
   }
   .main-footer__authors {
+    font-size: 18px;
+    font-weight: 700;
     margin-left: 215px;
+  }
+  .main-footer__logo {
+    background: url("../img/icon-pink-blue-desktop.svg") no-repeat;
   }
 }
 .social {
@@ -991,6 +1042,23 @@
   height: 45px;
   border-radius: 50%;
   border: 3px solid #e9ebec;
+}
+.social__btn:hover {
+  border-color: #4d5864;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.social__btn:active {
+  opacity: 0.3;
+}
+.social__btn--tw {
+  background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+}
+.social__btn--fb {
+  background: url("../img/icon-facebook.svg") no-repeat 50% 50%;
+}
+.social__btn--yt {
+  background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
 }
 .form__name,
 .form__wrapper,

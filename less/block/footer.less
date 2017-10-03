@@ -1,13 +1,10 @@
 .main-footer {
   display: none;
-  .red();
   &__wrapper {
     display: none;
-    display: flex;
     width: 280px;
     padding: 0 20px 0 20px;
     margin: 0 auto;
-    .green();
   }
   &__socials {
 
@@ -39,8 +36,15 @@
       margin-top: 4px;
     }
     &__authors {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
       margin-left: 58px;
     }
+  }
+
+  .main-footer__logo {
+    background: url("../img/icon-pink-blue-tablet.svg") no-repeat;
   }
 }
 
@@ -55,7 +59,12 @@
       margin-left: 234px;
     }
     &__authors {
+      font-size: 18px;
+      font-weight: 700;
       margin-left: 215px;
-    }
+   }
+  }
+  .main-footer__logo {
+    background: url("../img/icon-pink-blue-desktop.svg") no-repeat;
   }
 }
