@@ -8,7 +8,9 @@
   width: 280px;
   margin: 0 auto;
   padding: 22px 20px;
-  &::after {
+  &--index {
+    position: relative;
+    &::after {
     content: "";
     position: absolute;
     width: 256px;
@@ -16,6 +18,7 @@
     top: 173px;
     left: 0;
     background: url("../img/iphone-hand-mobile.png") no-repeat;
+    }
   }
 }
 
@@ -69,16 +72,19 @@
 }
 
 
+
 @media @tablet-width {
   .user-nav__wrapper {
     margin: 0 auto;
     width: 620px;
     padding: 32px 40px 43px 40px;
-    &::after {
+    &--index {
+      &::after {
       width: 700px;
       height: 545px;
       top: 184px;
       background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+    }
     }
   }
 
@@ -94,12 +100,14 @@
     padding-left: 130px;
     padding-right: 130px;
     padding-top: 27px;
-    &::after {
+    &--index {
+      &::after {
       width: 1050px;
       height: 645px;
       top: 208px;
       left: 146px;
       background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
+      }
     }
   }
 
