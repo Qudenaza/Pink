@@ -4,6 +4,7 @@
 
 .user-nav__wrapper {
   position: relative;
+  z-index: 20;
   display: flex;
   width: 280px;
   margin: 0 auto;
@@ -24,7 +25,10 @@
 
 .user-nav__list {
   display: none;
+  z-index: 10;
+  position: absolute;
   .list();
+  width: 100%;
 }
 
 .user-nav__item a {
@@ -112,6 +116,7 @@
   }
 
   .user-nav__list {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 620px;
